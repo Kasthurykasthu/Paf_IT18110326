@@ -63,10 +63,10 @@ $(document).on("click", ".btnRemove", function (event) {
 	$.ajax({
 		url : "PaymentAPI",
 		type : "DELETE",
-		data : "payno=" + $(this).data("PAYNO"),
+		data : "payno=" + $(this).data("pno"),
 		dataType : "text",
 		complete : function(response, status) {
-			onItemDeleteComplete(response.responseText, status);
+			onPaymentDeleteComplete(response.responseText, status);
 		}
 	});
 });
