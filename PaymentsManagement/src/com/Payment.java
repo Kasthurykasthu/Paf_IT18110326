@@ -6,10 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-
-
-
-
 public class Payment {
 	private Connection connect()  
 	{  
@@ -113,7 +109,7 @@ public class Payment {
 				// buttons     
 				
 			output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary'></td>"
-					+ "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-pno='"
+					+ "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-pano='"
 					+ payno + "'>" + "</td></tr>";
 			}
 			con.close(); 

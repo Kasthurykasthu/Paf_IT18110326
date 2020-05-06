@@ -63,7 +63,7 @@ $(document).on("click", ".btnRemove", function (event) {
 	$.ajax({
 		url : "PaymentAPI",
 		type : "DELETE",
-		data : "payno=" + $(this).data("pno"),
+		data : "payno=" + $(this).data("pano"),
 		dataType : "text",
 		complete : function(response, status) {
 			onPaymentDeleteComplete(response.responseText, status);
